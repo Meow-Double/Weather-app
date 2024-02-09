@@ -1,0 +1,32 @@
+.container {
+    max-width: 400px;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .param {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #767676;
+    margin-bottom: 10px;
+  }
+  
+  .lastUpdate {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #767676;
+    text-align: right;
+    margin-block: 20px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  

@@ -1,0 +1,16 @@
+.input {
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #a8a8a8;
+  padding-block: 10px;
+  margin-block: 30px;
+}
+
+.actions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}

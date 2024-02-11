@@ -1,9 +1,15 @@
-import type { FC } from 'react';
-import styles from './CreateWeatherCard.module.css';
+import { type FC } from 'react';
+import { Button, ButtonVariant } from 'shared/components';
+import { useToggleModal } from '../model';
+import { Form } from '../components';
 
-// interface Props {
-// }
+export const CreateWeatherCard: FC = () => {
+  const { toggleModal, isOpen } = useToggleModal();
 
-export const WeatherCard: FC = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Form isOpen={isOpen} toggleModal={toggleModal} />
+      <Button onClick={toggleModal} view={ButtonVariant.Primary} />
+    </div>
+  );
 };

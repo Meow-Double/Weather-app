@@ -22,7 +22,7 @@ export const WeatherCard: FC<Props> = ({city, country}) => {
       </div>
 
       {params.map(({ title, description }) => (
-        <div className={styles.param}>
+        <div key={title} className={styles.param}>
           <div>{title}</div>
           <div>{description}</div>
         </div>
